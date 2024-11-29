@@ -1,7 +1,12 @@
 package com.infycodes.springboot_firstapp.model;
 
 public class Student {
-	
+
+	public Student(String name, Integer id) {
+		super();
+		this.name = name;
+		this.id = id;
+	}
 	String name;
 	Integer id;
 	
@@ -17,12 +22,6 @@ public class Student {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public Student(String name, Integer id) {
-		super();
-		this.name = name;
-		this.id = id;
-	}
-	
 	
 
 }

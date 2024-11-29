@@ -33,14 +33,10 @@ public class Controller {
 	@GetMapping(value="/get-book")
 	public ResponseEntity<Book> getbook()
 	{
-		
 		Book book=new Book();
 		book.setName(bookConfig.getName());
 		book.setPublishedDate(bookConfig.getPublishedDate());
 		return new ResponseEntity<>(book,HttpStatus.OK);
 	}
 	
-	
-	
-
 }
