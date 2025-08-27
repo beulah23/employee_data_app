@@ -2,20 +2,15 @@ package com.employee.app.empdata.entity;
 
 import javax.persistence.*;
 @Entity
-@Table(name="Employee")
 public class Employee {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	int empId;
+	Integer empId;
 	String name;
 	String mobileNo;
 
-	/*
-	 * public Employee(int empId, String name, String mobileNo) { super();
-	 * this.empId = empId; this.name = name; this.mobileNo = mobileNo; }
-	 */
-	public int getEmpId() {
+		public int getEmpId() {
 		return empId;
 	}
 
